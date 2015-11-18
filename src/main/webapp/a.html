@@ -1,0 +1,60 @@
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>证券行业的知识图谱可视化</title>
+  <meta name="description" content="证券行业的知识图谱可视化">
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Christian Swinehart">
+	<script type="text/javascript" src="http://use.typekit.com/mxh7kqd.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="style/link.css" type="text/css" charset="utf-8">
+</head>
+<body>
+  <div id="nav">
+    <p>证券行业的知识图谱可视化</p>
+  </div>
+  <div style="margin-left:800px">
+    
+    <!-- <input id="query1" type="text"></input>
+    <input id="button1" type="submit" value="查询"></input> -->
+    <span style="position:fixed;right:664px;top:5px">搜索股票</span>
+  <input style="position:fixed;right:600px;top:25px"></input>
+  <button type='submit' style="position:fixed;top:25px">搜索</button>
+
+  <table id="xyz1">
+    <tbody>
+  <title>知识卡片</title> 
+ <tr><th>股票名称：</th><td>平安银行</td></tr>
+ <tr><th>股票代码：</th><td>000001</td></tr>
+ <tr><th>当前价位：</th><td style="color:#7CCD7C;font-family: '微软雅黑';"><strong>12.55</strong></td></tr>
+ <tr><th>所属行业：</th><td>银行--银行--银行</td></tr>
+
+  </tbody></table>
+  <table id ="fix_right">
+    <tbody>
+     <tr><th style="position:fixed;top:5px">经营范围：</th><td><textarea style="width:200px;height:80px">吸收公众存款；发放短期、中期和长期贷款；办理国内外结算；办理票据承兑与贴现；发行金融债券；代理发行、代理兑付、承销政府债券；买卖政府债券、金融债券；从事同业拆借；买卖、代理买卖外汇；从事银行卡业务；提供信用证服务及担保；代理收付款项及代理保险业务；提供保管箱服务；结汇、售汇业务；离岸银行业务；资产托管业务；办理黄金业务；财务顾问、资信调查、咨询、见证业务；经有关监管机构批准的其他业务。</textarea></td></tr>
+<tr><th>选股动向：</th><td>本月发生大宗交易<br>持续5天放量<br>券商持股（近六个月）</td></tr>
+  </tbody>
+  </table>
+   <input id="return" type="button" value="返回" onclick="window.location.href='http://localhost:5858/test/src/main/webapp/index.html'"></input>
+   <span id="xyz2" >
+  说明:<br>
+  圆形为股票，方形为影响因素<br>
+绿色线条:该因素使相连的股票价格下跌<br>
+红色线条:该因素使相连的股票价格上涨
+
+  </span>  
+    </div>
+  <div id="fixed">
+  <canvas id="sitemap" ></canvas>
+  <script src="js/jquery-1.6.1.min.js"></script>
+  <script src="js/jquery.address-1.4.min.js"></script>
+
+  <script src="js/arbor.js"></script>
+  <script src="js/arbor-tween.js"></script>
+  <script src="js/arbor-graphics.js"></script>
+  <script src="js/a.js"></script>
+</div>
+</body>
+</html>

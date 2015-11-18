@@ -1,0 +1,31 @@
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>证券行业的知识图谱可视化</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Christian Swinehart">
+	<link rel="stylesheet" href="style/atlas.css" type="text/css"  charset="utf-8">
+	
+</head>
+<body>
+  <div id="maps"><ul></ul></div>
+ <div style="margin-left:1000px">
+    <input id="query" type="text" ></input>
+    <input id="button" type="submit" value="查询"></input>
+    <input id="detail" type="button" value="明细" ></input>
+       <textarea id="xyz" rows="5" cols="20">
+          知识卡片 
+   </textarea>
+    </div>
+    <canvas id="viewport" width="800" height="400"></canvas>
+    <div style="margin-left:1300px" >
+     <input id="pos" type="button" value="返回" onclick="window.location.href='http://localhost:5858/test/src/main/webapp/index2.html'"></input>
+    </div>
+   <script src="jquery-1.6.1.min.js"></script>
+  <script src="js/arbor.js"></script>
+  <script src="js/atlas.js"></script>
+  <script src="js/search.js"></script>
+ 
+</body>
+</html>

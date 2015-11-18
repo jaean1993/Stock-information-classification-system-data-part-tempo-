@@ -1,0 +1,43 @@
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>证券行业的知识图谱可视化</title>
+  <meta name="description" content="证券行业的知识图谱可视化">
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Christian Swinehart">
+	<script type="text/javascript" src="http://use.typekit.com/mxh7kqd.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="style/link.css" type="text/css" charset="utf-8">
+</head>
+<body>
+  <div id="nav">
+    <p>证券行业的知识图谱可视化</p>
+  </div>
+  <div style="margin-left:800px">
+  <textarea id="xyz2" rows="5" cols="20">
+  说明:
+灰色粗线条:相连的两支股票属于同一类型
+蓝色细线条:相连的两支股票属于同一供应链
+  </textarea>    
+    <!-- <input id="query1" type="text"></input>
+    <input id="button1" type="submit" value="查询"></input> -->
+       <textarea id="xyz1" rows="5" cols="20">
+         知识卡片 
+ 股票名称:股票K
+ 股票代码:100011
+ 最新价:111.12
+ 股东：Kk
+   </textarea>
+   <input id="return" type="button" value="返回" onclick="window.location.href='http://localhost:5858/test/src/main/webapp/index.html'"></input>
+    </div>
+    <canvas id="sitemap" width="800" height="500"></canvas>
+  <script src="js/jquery-1.6.1.min.js"></script>
+  <script src="js/jquery.address-1.4.min.js"></script>
+
+  <script src="js/arbor.js"></script>
+  <script src="js/arbor-tween.js"></script>
+  <script src="js/arbor-graphics.js"></script>
+  <script src="js/k.js"></script>
+</body>
+</html>
